@@ -65,19 +65,19 @@ const specialKeys = {
 const LEVEL_ENEMIES = [ //The y2 variable dictates how high up the unit starts
   [{
     name: 'FloatingFish',
-    width: 44,
-    height: 36,
+    width: 64,
+    height: 56,
     y2: 200
   }, {
     name: 'zombie',
-    width: 40,
-    height: 45,
-    y2: 205
+    width: 70,
+    height: 75,
+    y2: 185
   }],
   [{
     name: 'FloatingFish',
-    width: 44,
-    height: 36,
+    width: 64,
+    height: 56,
     y2: 200
   }, {
     name: 'BlackBlob',
@@ -87,8 +87,8 @@ const LEVEL_ENEMIES = [ //The y2 variable dictates how high up the unit starts
   }],
   [{
     name: 'FloatingFish',
-    width: 44,
-    height: 36,
+    width: 64,
+    height: 56,
     y2: 200
   }, {
     name: 'SlidingSkull',
@@ -98,8 +98,8 @@ const LEVEL_ENEMIES = [ //The y2 variable dictates how high up the unit starts
   }],
   [{
     name: 'FloatingFish',
-    width: 44,
-    height: 36,
+    width: 64,
+    height: 56,
     y2: 200
   }, {
     name: 'CyclopsCrab',
@@ -109,8 +109,8 @@ const LEVEL_ENEMIES = [ //The y2 variable dictates how high up the unit starts
   }],
   [{
     name: 'FloatingFish',
-    width: 44,
-    height: 36,
+    width: 64,
+    height: 56,
     y2: 200
   }, {
     name: 'CyclopsCrab',
@@ -821,7 +821,7 @@ function restartGame() {
 
 function gameComplete() {
   var modal = document.getElementById('gameCompleteModal');
-  modal.style.display = 'block';
+  // modal.style.display = 'block';
   gameArea.stop();
   if(highscore < score){
     highscore = score;

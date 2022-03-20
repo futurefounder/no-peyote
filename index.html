@@ -1,19 +1,20 @@
 <!---
-Description: Home page for game. Calls initialize_game() function in JS_Game.js file on page load and
+Description: 
+The Game No Peyote is based on a Game by Edward Dunn
+
+Game description:
+Home page for game. Calls initialize_game() function in JS_Game.js file on page load and
 contains code for game over and game complete modals.
 Author: Open Source - Contributor list can be seen in GitHub
 
 (c) Music by Stephen Bennett on 
 https://www.fesliyanstudios.com/royalty-free-music/download/land-of-8-bits/288
 
-
-(c) Intro Andrew Tunnecliffe
-https://codepen.io/atunnecliffe/pen/BaZyLR
-
 (c) Character
 <a href='https://pngtree.com/so/Flash'>Flash png from pngtree.com/</a>
 https://pngtree.com/element/down?id=NDQyNzE1Mw==&type=1&time=1647377195&token=MTdhYTZhOTAwZWZiODBjZWE4ODUwNTVjNGUxY2M0Zjc=
 
+(c) Images
 https://pngtree.com/freepng/sprite-sheet-of-the-flash-character-with-animation-for-creating-2d-game_5268150.html
 
 https://pngtree.com/freepng/cartoon-animal-game-character-design_4069832.html
@@ -30,6 +31,7 @@ https://pngtree.com/freepng/cartoon-animal-game-character-design_4069832.html
 	<link rel="stylesheet" type="text/css" href="Style-Sheets/InstructionsModal.css">
 	<link rel="stylesheet" type="text/css" href="Style-Sheets/GameOverModal.css">
 	<link rel="stylesheet" type="text/css" href="Style-Sheets/GameCompleteModal.css">
+
 	<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
 
 	<!--Main game script-->
@@ -37,8 +39,9 @@ https://pngtree.com/freepng/cartoon-animal-game-character-design_4069832.html
 
 </head>
 
-<!--On page load call showInstructions method-->
-<body onload="showInstructions()" onkeydown="KeyDown(event)" onkeyup="KeyUp(event)" ondragend="onMouseUp()">
+<!--On page load call showInstructions method -->
+<body onload="showInstructions()" onkeydown="KeyDown(event)" onkeyup="KeyUp(event)" ondragend="onMouseUp()" >
+
 	<!-- Banner -->
 	<img id="banner" src="Pictures/banner.png">
 
@@ -82,18 +85,36 @@ https://pngtree.com/freepng/cartoon-animal-game-character-design_4069832.html
 		<img class="buttonImages" src="Pictures/restart.png" alt="RestartButton" />
 	</button-->
 
-
 	<div id="instructionsModal" class="modal">
 
 		<div class="modal-content">
+			<center> 
+			<h1>✨🌵✨ Why you should care ✨🌵✨</h1>
+			</center>
+			<p>Peyote is <span style="font-weight:bold; text-decoration:underline;">endangered</span> :</p>
+			<ul>
+				<li style="font-style:italic;font-weight:bold">"Significant measures must be taken to protect and conserve peyote for future generations or it too may become extinct like numerous other plant and animal species have worldwide." <br>
+					<a href="https://digitalcommons.law.seattleu.edu/ailj/vol9/iss1/6/" target="_blank"> - American Indian Law Journal</a></li>
+					<br>
+				<li style="font-style:italic;font-weight:bold">Engaging in Peyote Psychedelic Tourism harms indegenious people that use Peyote for hundreds of years
+				<br>
+				<a href="https://www.nytimes.com/2021/07/05/travel/mexico-peyote-pilgrimage.html" target="_blank"> - New York Time - Inside a Peyote Pilgrimage</a></li>
+				<br>
+				<br>
+				<li style="font-style:italic;font-weight:bold">"It takes around 8 years for plants to re-generate after harvesting event"
+				<br>
+				<a href="https://www.youtube.com/watch?v=9DaXcYyGI1o&t=1454s" target="_blank"> - Anna Ermakova - Peyote Conservation in the USA</a></li>
+				<br>
+			</ul>
 
-			<h3>Instructions</h3>
+			<center> 
+			<h1>🕹️ How to play</h1>
+			</center>
 
-			<p>How to play:</p>
 			<ul>
 				<li>Complete each level by avoiding the enemy characters</li>
-				<li>Kill enemies by jumping on them</li>
-				<li>Killing an enemy grants you bonus score</li>
+				<li>Defeat enemies (🔔 Social Media Event Alerts, 🧟 Zombie Drug Tourists etc.) by jumping on them</li>
+				<li>Defeating an enemy grants you bonus scores</li>
 			</ul>
 
 			<p>Controls:</p>
@@ -254,7 +275,10 @@ https://pngtree.com/freepng/cartoon-animal-game-character-design_4069832.html
 		<div id="levelTransitionModalContent" class="modal-content">
 			<img class="gameOverLabel" src="Pictures/victory.png" alt="VICTORY">
 			<p class="levelTransitionMessage">Level complete!</p>
-			<p class="levelTransitionMessage">Press c to continue</p>
+			<p class="levelTransitionMessageFacts">Did you know? <br> <br>
+			🏜️ "For nearly 2 centuries, Peyote use has been noted among Native Americans, mostly tribes located in the Southern Plains." <br>  - Colorado College <br> <br>
+			<span style="font-style: italic;" > 	“We’re upset that people come here and steal peyote because for us it’s a deity, not a drug,” Mijarez said. “It’s part of our identity and we respect it.”</span> - <br> <a href="https://www.vice.com/en/article/a3jq5e/an-indigenous-mexican-people-are-battling-cartels-and-peyote-tourism" target="_blank" rel="noopener noreferrer">Vice - An indigenous Mexican people are battling cartels and peyote tourism</a> </p>
+			<p class="levelTransitionMessage">Press C to continue</p>
 			<div class="resumeButton">
 				<img class="button" src="Pictures/resume.png" width="100%" onClick="resumeGame()" alt="ResumeGame" />
 			</div>
