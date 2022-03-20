@@ -1,12 +1,17 @@
-# Platform Game (Codename: The Jumping Dead)
-An HTML/JavaScript platformer created using [W3 Schools' Game Tutorial](http://www.w3schools.com/graphics/game_canvas.asp ) as a learning guide. The game uses the HTML canvas element to support functionality.
+<p align="center">
+<img src="[https://github.com/futurefounder/no-peyote/blob/master/Pictures/banner.png?raw=true](https://github.com/futurefounder/no-peyote/blob/master/Pictures/banner.png?raw=true)">
+</p>
 
-The goal is to evade all the bad guys!
+## A Platform Game that draws awareness to the topic of peyote tourism
 
-### Help Wanted
-New contributors are welcome to work on this game, as it's only in the early stages and needs a lot of additional features. Please read the [CONTRIBUTING](https://github.com/EdwardDunn/Platform-Game/blob/master/CONTRIBUTING.md) document if you'd like to contribute.
+An HTML/JavaScript platformer created using [this project](https://github.com/EdwardDunn/Platform-Game) by Edward Dunn.
 
-## [Play Game](https://edwarddunn.github.io/Platform-Game/index.html)
+The goal is to evade all the eneies, which are social media alerts (stanidng for peyote event alerts), peyote "zombie" tourists etc.
+
+The game shows facts, articles and information on the topic of peyote being overused by tourists.
+
+# [🕹️ Play Game](https://futurefounder.github.io/no-peyote/)
 
 ### Licenses
+
 This project is filed under the MIT license.
